@@ -1,20 +1,31 @@
 # mock-chico-rei
 
-This template should help get you started developing with Vue 3 in Vite.
+Welcome to **mock-chico-rei**, a project developed as part of a technical challenge requested by **O Molho**. This mock was created with a focus on building a functional and stylish interface using **Vue.js** and **Less**.
 
-## Recommended IDE Setup
+## Technologies Used
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **Vue.js** – A progressive framework for building interactive web interfaces.
+- **Less** – A CSS preprocessor for more dynamic and organized styles.
+- **ESLint** – A tool to ensure clean and standardized code.
+- **Prettier** – A code formatter ensuring consistent style across the codebase.
 
-## Type Support for `.vue` Imports in TS
+## Challenge Requirements
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+For this project, the following criteria were defined:
 
-## Customize configuration
+1. Use **Vue.js** for the interface.
+2. Style with **Less**.
+3. The source code must be available in a public repository on **GitHub**, with clear installation and execution instructions.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+---
 
-## Project Setup
+## How to Run the Project
+
+### Initial Setup
+
+Before starting, make sure you have [Node.js](https://nodejs.org/) installed.
+
+Clone the repository and install the dependencies:
 
 ```sh
 npm install
@@ -37,3 +48,9 @@ npm run build
 ```sh
 npm run lint
 ```
+
+---
+
+## Feedback
+
+If you have any questions, suggestions, or find any bugs, feel free to open an issue or submit a pull request.
