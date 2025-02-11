@@ -21,7 +21,7 @@ For this project, the following criteria were defined:
 
 ## How to Run the Project
 
-## Routing
+### ‼ Routing ‼ (IMPORTANT)
 Each technical challenge was made in a different route to keep things separated and more organized. Each challenge can be accessed by navigating to these routes.
 
 - **/** - Challenge 1: Responsive Layout

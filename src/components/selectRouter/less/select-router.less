@@ -1,0 +1,43 @@
+@primary-color: white;
+@secondary-color: black;
+@border-radius: 10px;
+@select-width: 12.5rem;
+@select-height: 3.125rem;
+@mb: 3.125rem;
+
+.flex-center() {
+  display: flex;
+  justify-content: center;
+}
+
+.select-router {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-select {
+  .flex-center();
+  margin-bottom: @mb;
+
+  select {
+    width: @select-width;
+    height: @select-height;
+    color: @primary-color;
+    background: transparent !important;
+    font-size: large;
+    font-weight: bold;
+    border: 2px solid @primary-color;
+    border-radius: @border-radius;
+  }
+
+  option {
+    font-weight: bold;
+    color: @secondary-color;
+  }
+}
+
+@media (min-width: 1024px) {
+  .custom-select {
+    justify-content: flex-start;
+  }
+}

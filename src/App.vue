@@ -4,11 +4,6 @@ import { RouterView } from 'vue-router'
 
 <template>
   <body class="main-body">
-    <header>
-      <h1 class="main-title">
-        Xicaras
-      </h1>
-    </header>
     <RouterView />
   </body>
 </template>
@@ -18,8 +13,4 @@ import { RouterView } from 'vue-router'
   text-align: center;
   padding: 3.125rem;
 }
-.main-title {
-  color: white;
-  margin-bottom: 2.5rem
-};
 </style>

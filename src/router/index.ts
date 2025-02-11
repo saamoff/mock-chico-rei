@@ -1,5 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import ChallengeOne from '../views/ChallengeOne.vue'
+import ChallengeTwo from '@/views/ChallengeTwo.vue'
+import ShirtsContent from "@/components/productContent/shirts/ShirtsContent.vue"
+import JumpersContent from "@/components/productContent/jumpers/JumpersContent.vue"
+import MugsContent from "@/components/productContent/mugs/MugsContent.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -9,22 +13,39 @@ const router = createRouter({
       name: 'challengeone',
       component: ChallengeOne,
     },
-    // {
-    //   path: '/1',
-    //   name: 'challengetwo',
-    //   component: ChallengeTwo ,
-    // },
+    {
+      path: '/:id',
+      name: 'challengetwo',
+      component: ChallengeTwo,
+      redirect: to => {
+        return `/${to.params.id}/camisetas`;
+      },
+      children: [
+        {
+          path: "camisetas",
+          component: ShirtsContent,
+        },
+        {
+          path: "moletons",
+          component: JumpersContent,
+        },
+        {
+          path: "xicaras",
+          component: MugsContent,
+        },
+      ],
+    },
     // {
     //   path: '/2',
     //   name: 'challengethree',
-    //   component: ChallengeThree ,
+    //   component: ChallengeThree,
     // },
     // {
     //   path: '/3',
     //   name: 'challengefour',
-    //   component: ChallengeFour ,
+    //   component: ChallengeFour,
     // },
-    
+    // {
   ],
 })
 
