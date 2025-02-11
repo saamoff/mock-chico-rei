@@ -21,6 +21,14 @@ For this project, the following criteria were defined:
 
 ## How to Run the Project
 
+## Routing
+Each technical challenge was made in a different route to keep things separated and more organized. Each challenge can be accessed by navigating to these routes.
+
+- **/** - Challenge 1: Responsive Layout
+- **/1** - Challenge 2: Routing
+- **/2** - Challenge 3: Side Menu
+- **/3** - Challenge 4: Checkout Form
+
 ### Initial Setup
 
 Before starting, make sure you have [Node.js](https://nodejs.org/) installed.
