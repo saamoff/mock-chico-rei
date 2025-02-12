@@ -1,7 +1,13 @@
 <template>
   <div>
     <div class="items-container">
-      <StoreItem :imgCategory="'Jumpers'" :showTextArea="false" v-for="item in items" :key="item.id" :item="item" />
+      <StoreItem
+        :imgCategory="'Jumpers'"
+        :showTextArea="false"
+        v-for="item in items"
+        :key="item.id"
+        :item="item"
+      />
     </div>
   </div>
 </template>
@@ -19,5 +25,5 @@ export default {
 </script>
 
 <style scoped>
-@import "../less/product-content.less"
+@import '../less/product-content.less';
 </style>

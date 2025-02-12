@@ -1,14 +1,14 @@
 <template>
   <div>
-    <SelectRouter />
+    <SideMenu />
   </div>
 </template>
 
 <script lang="ts">
-import SelectRouter from '../components/selectRouter/vue/SelectRouter.vue'
+import SideMenu from '@/components/sideMenu/vue/SideMenu.vue'
 export default {
   components: {
-    SelectRouter,
+    SideMenu,
   },
 }
 </script>

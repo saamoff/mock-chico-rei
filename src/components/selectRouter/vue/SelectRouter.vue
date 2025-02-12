@@ -8,7 +8,7 @@
       </select>
     </span>
     <span>
-      <RouterView/>
+      <RouterView />
     </span>
   </div>
 </template>
@@ -18,13 +18,13 @@ export default {
   name: 'SelectRouter',
   methods: {
     navigateToRoute(event: Event): void {
-      const selectedRoute = (event.target as HTMLSelectElement).value;
-      this.$router.push(`/${this.$route.params.id}${selectedRoute}`);
+      const selectedRoute = (event.target as HTMLSelectElement).value
+      this.$router.push(`/${this.$route.params.id}${selectedRoute}`)
     },
   },
 }
 </script>
 
 <style lang="less" scoped>
-@import "../less/select-router.less";
+@import '../less/select-router.less';
 </style>

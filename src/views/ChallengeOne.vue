@@ -11,12 +11,18 @@ export default {
 </script>
 
 <template>
-  <h1 style="color: white; padding-bottom: 3.125rem">Xicaras</h1>
+  <h1 style="color: white; padding-bottom: 3.125rem; text-align: center">Xicaras</h1>
   <div class="items-container">
-    <StoreItem :imgCategory="'Mugs'" :showTextArea="true" v-for="item in items" :key="item.id" :item="item" />
+    <StoreItem
+      :imgCategory="'Mugs'"
+      :showTextArea="true"
+      v-for="item in items"
+      :key="item.id"
+      :item="item"
+    />
   </div>
 </template>
 
 <style scoped>
-@import "../components/productContent/less/product-content.less"
+@import '../components/productContent/less/product-content.less';
 </style>

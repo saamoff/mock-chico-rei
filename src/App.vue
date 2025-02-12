@@ -10,7 +10,6 @@ import { RouterView } from 'vue-router'
 
 <style scoped>
 .main-body {
-  text-align: center;
-  padding: 3.125rem;
+  padding: 1.25rem;
 }
 </style>
