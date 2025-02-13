@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import ChallengeOne from '../views/ChallengeOne.vue'
 import ChallengeTwo from '@/views/ChallengeTwo.vue'
 import ChallengeThree from '@/views/ChallengeThree.vue'
+import ChallengeFour from '@/views/ChallengeFour.vue'
+import SuccessPage from '@/views/SuccessPage.vue'
 import ShirtsContent from '@/components/productContent/shirts/ShirtsContent.vue'
 import JumpersContent from '@/components/productContent/jumpers/JumpersContent.vue'
 import MugsContent from '@/components/productContent/mugs/MugsContent.vue'
@@ -41,12 +43,17 @@ const router = createRouter({
       name: 'challengethree',
       component: ChallengeThree,
     },
-    // {
-    //   path: '/3',
-    //   name: 'challengefour',
-    //   component: ChallengeFour,
-    // },
-    // {
+    {
+      path: '/form',
+      name: 'challengefour',
+      component: ChallengeFour,
+      children: [
+        {
+          path: 'success',
+          component: SuccessPage,
+        },
+      ],
+    },
   ],
 })
 

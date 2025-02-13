@@ -21,7 +21,6 @@
 
 <script lang="ts">
 export default {
-  name: 'StoreItem',
   props: {
     showTextArea: {
       type: Boolean,

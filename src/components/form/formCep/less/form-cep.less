@@ -1,0 +1,92 @@
+.form-cep {
+  margin-bottom: 3.125rem;
+
+  h2 {
+    padding-bottom: 2.5rem;
+  }
+  :not(:last-child, :first-child) {
+    margin-bottom: 3.125rem;
+  }
+
+  &__search {
+    display: flex;
+    justify-content: space-between;
+
+    &-input {
+      width: 31.25rem;
+    }
+
+    &-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 3.75rem;
+      height: 3.3125rem;
+      background: white;
+      padding: 1rem;
+      transition: all 0.3s ease;
+
+      &-disabled {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3.75rem;
+        height: 3.3125rem;
+        padding: 1rem;
+        cursor: default !important;
+        background: grey;
+
+        img {
+          width: 1.5625rem;
+        }
+      }
+
+      &:hover {
+        background: gray;
+      }
+
+      img {
+        width: 1.5625rem;
+      }
+    }
+  }
+
+  &__neighborhood {
+    display: flex;
+
+    &-number {
+      width: 9.375rem;
+    }
+
+    &-district {
+      width: 27.125rem;
+      padding-left: 1rem;
+    }
+  }
+
+  &__province {
+    display: flex;
+
+    &-city {
+      width: 27.125rem;
+      padding-right: 1rem;
+    }
+
+    &-state {
+      width: 9.375rem;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  animation: spin 1s ease-in-out infinite;
+}

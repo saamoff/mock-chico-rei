@@ -27,7 +27,7 @@ Each technical challenge was made in a different route to keep things separated 
 - **/** - Challenge 1: Responsive Layout
 - **/1** - Challenge 2: Routing
 - **/2** - Challenge 3: Side Menu
-- **/3** - Challenge 4: Checkout Form
+- **/form** - Challenge 4: Checkout Form
 
 ### Initial Setup
 
