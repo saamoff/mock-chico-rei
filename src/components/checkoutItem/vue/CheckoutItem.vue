@@ -12,6 +12,9 @@
           <h2>Produto Lorem</h2>
           <p>R$19,90</p>
         </span>
+        <span class="checkout-item__content-quantity">
+          <p>Quantidade</p>
+        </span>
         <span class="checkout-item__content-buttons">
           <button @click="removeItem">
             <img src="../../../assets/minus.svg" alt="remove" />
